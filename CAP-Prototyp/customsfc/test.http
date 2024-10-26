@@ -1,0 +1,41 @@
+
+### Testing ReadallFunction
+Get  http://localhost:4004/readallcustomsfc/readAllSfcData()
+
+### Testing ReadFunction
+GET http://localhost:4004/readcustomsfc/readSfcData(sfc='BW01',plant='BW')
+
+### Testing CreateAction
+POST http://localhost:4004/createcustomsfc/createSfcData
+Content-Type: application/json
+
+{
+    "sfc": "BW01",
+    "plant": "BW",
+    "datafield": "Stage",
+    "datafieldvalue": "Abrüsten"
+}
+
+### Testing CreateAction
+POST http://localhost:4004/createcustomsfc/createSfcData
+Content-Type: application/json
+
+{
+    "sfc": "BW01",
+    "plant": "BW",
+    "datafield": "Stage",
+    "datafieldvalue": "Verpacken"
+}
+
+### Testing ChangeAction
+POST http://localhost:4004/changecustomsfc/changeSfcData
+Content-Type: application/json
+
+{
+    "sfc": "BW01",
+    "plant": "BW",
+    "datafield": "Stage",
+    "datafieldvalue": "Warten",
+    "datafieldnew": "Stage",
+    "datafieldvaluenew": "Einpacken"
+}

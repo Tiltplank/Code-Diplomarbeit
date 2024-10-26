@@ -1,0 +1,5 @@
+ID,sfc,plant,datafield,datafieldvalue
+1,BW02,BW,Stage,Warten
+2,BW02,BW,Stage,Rüsten
+3,BW01,BW,Stage,Warten
+4,BW01,BW,Stage,Rüsten

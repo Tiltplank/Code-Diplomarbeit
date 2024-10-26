@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "customsfc",
+            "command": "npx cds watch",
+            "type": "node-terminal",
+            "request": "launch",
+            "skipFiles": [
+              "<node_internals>/**",
+              "**/node_modules/**",
+              "**/cds/lib/lazy.js",
+              "**/cds/lib/req/cds-context.js",
+              "**/odata-v4/okra/**"
+            ]
+        }
+    ]
+}
