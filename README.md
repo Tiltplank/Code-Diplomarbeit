@@ -4,9 +4,9 @@ Hier liegt der Code für die Diplomarbeit mit dem Titel: Prototypische Entwicklu
 # Verwendetes Setup:
 
 ### Java-Prototyp:
-> **Java SE Development Kit 17.0.4.1 (64 bit)**: Befindet sich im Ordner "Setup Tools" und muss installiert werden und dann zu den Umgebungsvariablen hinzugefügt werden.
->
-> - Neue Systemvariable anlegen: 
+> **Java SE Development Kit 17.0.4.1 (64 bit)**: Kann über https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html heruntergeladen werden. Folgend muss noch eine neue Umgebungsvariable angelegt werden.
+> 
+> - Neue Umgebungsvariable anlegen: 
 >
 >    Name: JAVA_HOME <br>
 >    Wert: "Pfad zum installierten JDK"
