@@ -219,7 +219,7 @@
       "get": {
         "summary": "Invokes function readSfcData",
         "tags": [
-          "Customsfcs"
+          "Service Operations"
         ],
         "parameters": [
           {

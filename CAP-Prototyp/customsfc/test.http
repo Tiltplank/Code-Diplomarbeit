@@ -1,11 +1,10 @@
-
-### Testing ReadallFunction
+### Testen des Use Case: ReadAllCustomsfc
 Get  http://localhost:4004/readallcustomsfc/readAllSfcData()
 
-### Testing ReadFunction
+### Testen des Use Case: ReadCustomsfc für sfc= BW01 and plant= BW
 GET http://localhost:4004/readcustomsfc/readSfcData(sfc='BW01',plant='BW')
 
-### Testing CreateAction
+### Testen des Use Case: CreateCustomsfc
 POST http://localhost:4004/createcustomsfc/createSfcData
 Content-Type: application/json
 
@@ -16,7 +15,7 @@ Content-Type: application/json
     "datafieldvalue": "Abrüsten"
 }
 
-### Testing CreateAction
+### Testen des Use Case: CreateCustomsfc
 POST http://localhost:4004/createcustomsfc/createSfcData
 Content-Type: application/json
 
@@ -27,7 +26,8 @@ Content-Type: application/json
     "datafieldvalue": "Verpacken"
 }
 
-### Testing ChangeAction
+### Testing des Use Case: ChangeCustomsfc
+### (Dafür muss der vorherige Request gesendet werden, da der Datensatz sonst nicht existiert.)
 POST http://localhost:4004/changecustomsfc/changeSfcData
 Content-Type: application/json
 

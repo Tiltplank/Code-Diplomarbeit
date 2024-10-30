@@ -1,0 +1,87 @@
+### Hinzufügen von Datensätzen:
+### Dafür wird der Use Case: CreateCustomsfc verwendet
+### Datensatz 1:
+POST http://localhost:8080/api/customsfc/create
+Content-Type: application/json
+
+{
+    "sfc": "BW02",
+    "plant": "BW",
+    "dataField": "Stage",
+    "dataFieldValue": "Warten"
+}
+
+### Datensatz 2:
+POST http://localhost:8080/api/customsfc/create
+Content-Type: application/json
+
+{
+    "sfc": "BW02",
+    "plant": "BW",
+    "dataField": "Stage",
+    "dataFieldValue": "Rüsten"
+}
+
+### Datensatz 3:
+POST http://localhost:8080/api/customsfc/create
+Content-Type: application/json
+
+{
+    "sfc": "BW01",
+    "plant": "BW",
+    "dataField": "Stage",
+    "dataFieldValue": "Warten"
+}
+
+### Datensatz 3:
+POST http://localhost:8080/api/customsfc/create
+Content-Type: application/json
+
+{
+    "sfc": "BW01",
+    "plant": "BW",
+    "dataField": "Stage",
+    "dataFieldValue": "Rüsten"
+}
+
+### Testen des Use Case: ReadAllCustomsfc
+Get  http://localhost:8080/api/customsfc/readall
+
+### Testen des Use Case: ReadCustomsfc für sfc = BW01 und plant= BW
+GET http://localhost:8080/api/customsfc/read?sfc=BW01&plant=BW
+
+### Testen des Use Case: CreateCustomsfc
+POST http://localhost:8080/api/customsfc/create
+Content-Type: application/json
+
+{
+    "sfc": "BW02",
+    "plant": "BW",
+    "dataField": "Stage",
+    "dataFieldValue": "Abrüsten"
+}
+
+### Testen des Use Case: CreateCustomsfc
+POST http://localhost:8080/api/customsfc/create
+Content-Type: application/json
+
+{
+    "sfc": "BW01",
+    "plant": "BW",
+    "dataField": "Stage",
+    "dataFieldValue": "Verpacken"
+}
+
+### Testen des Use Case: ChangeCustomsfc
+### (Dafür muss der vorherige Request gesendet werden, da der Datensatz sonst nicht existiert.)
+PUT http://localhost:8080/api/customsfc/change
+Content-Type: application/json
+
+{
+    "sfc": "BW01",
+    "plant": "BW",
+    "dataField": "Stage",
+    "dataFieldValue": "Verpacken",
+    "dataFieldNew": "Stage",
+    "dataFieldValueNew": "Abschicken"
+}

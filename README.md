@@ -46,8 +46,70 @@ Hier liegt der Code für die Diplomarbeit mit dem Titel: Prototypische Entwicklu
 
 # Testen der Prototypen:
 
-### Java-Prototyp:
+Für das Testen der Prototypen und deren Endpunkte gibt es jeweils 2 Möglichkeiten. Zum einen eine Swagger-UI und ein test.http-File im Projektverzeichnis.
+Um das test.http-File zu verwenden, muss die REST-Client Extension installiert sein.
+
+## Java-Prototyp:
+
+### Nutzen des test.http-Files:
+
+Um die Anfragen an die Endpunkte zu stellen, muss lediglich auf den Send Request über dem Bezeichner für die Methode und der URL geklickt werden. Die Antwort wird durch die Extension
+automatisch in einem neuen Fenster angezeigt.
+
+> ![](/graphics/test_http_file_Java.PNG)
+
+Bei CAP sind bei Start der Anwendung schon 4 Datensätze hinterlegt, diese lassen sich bei dem Java-Prototyp
+schnell über die 4 Requests am Anfang des test.http-Files anlegen.
+
+### Nutzen der Swagger-UI:
 
 
+URL zum öffnen der Swagger-UI im Browser:
 
-### CAP-Prototyp:
+> http://localhost:8080/swagger-ui/index.html
+
+Für das Nutzen der Swagger-UI können die einzelnen Endpunkte einfach getestet werden.
+
+![](/graphics/Swagger_Überblick_Java.PNG)
+
+Über die Pfeile an der rechten Seite lassen sich die einzelnen Endpunkte genauer betrachten. Folgend kann dann auf "Try it out" geklickt werden, um
+den Endpunkt zu testen. Hierfür müssen dann nur noch die Parameter eingegeben werden.
+
+![](/graphics/Swagger_Beispiel_Create.PNG)
+
+
+## CAP-Prototyp:
+
+### Nutzen des test.http-Files:
+
+Um die Anfragen an die Endpunkte zu stellen, muss lediglich auf den Send Request über dem Bezeichner für die Methode und der URL geklickt werden. Die Antwort wird durch die Extension
+automatisch in einem neuen Fenster angezeigt.
+
+> ![](/graphics/test_http_file_cap.PNG)
+
+### Nutzen der Swagger UI:
+
+URL zum Öffnen der Swagger-UI im Browser:
+
+> http://localhost:4004/docs/index.html
+
+Für das Nutzen der Swagger-UI können die einzelnen Endpunkte einfach getestet werden. Allerdings muss hier dafür zwischen den definitons gewechselt werden, diese Auswahl
+befindet sich oben rechts.
+
+![](/graphics/Swagger_wechsel_definitions.PNG)
+
+Damit können dann die einzelnen Use Cases auch hier wie oben im Java-Abschnitt getestet werden.
+
+![](/graphics/Swagger_Beispiel_Create_CAP.PNG)
+
+Zur Übersicht nochmal die Endpunkte für die Functions und Actions:
+
+**/createSfcData**
+
+**/changeSfcData**
+
+**/readAllSfcData**
+
+/readSfcData  | Edit: Diese Function wird bei der Generierung der Swagger-Doku durch CAP nicht richtig abgebildet und funktioniert nicht mehr richtig. Allerdings lässt sich die
+Function im test.http-File immer noch ohne Probleme ausführen und bietet die gewünschte Funktionalität, daher liegt es nicht an dem eigentlichen Code. Bis zur Abgabe dieser Arbeit
+wurde kein Fix dafür gefunden, wenn dieses Problem gelöst wurde, kommt ein weiterer Vermerk. Ein Anhaltspunkt ist, dass die Function durch Swagger falsch aufgerufen wird.
