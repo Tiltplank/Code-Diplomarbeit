@@ -53,6 +53,9 @@ Um das test.http-File zu verwenden, muss die REST-Client Extension installiert s
 
 ### Nutzen des test.http-Files:
 
+Um den Java-Prototypen zu starten, muss lediglich die **Application.java** unter <br> 
+**\Java-Prototyp\Prototyp_1\src\main\java\com\systemagmbh\template** ausgeführt werden.
+
 Um die Anfragen an die Endpunkte zu stellen, muss lediglich auf den Send Request über dem Bezeichner für die Methode und der URL geklickt werden. Die Antwort wird durch die Extension
 automatisch in einem neuen Fenster angezeigt.
 
@@ -81,6 +84,8 @@ den Endpunkt zu testen. Hierfür müssen dann nur noch die Parameter eingegeben 
 ## CAP-Prototyp:
 
 ### Nutzen des test.http-Files:
+
+Um die Anwendung zu starten wird im Terminal unter **\CAP-Prototyp\customsfc** Verzeichnis: ***cds watch*** ausgeführt.
 
 Um die Anfragen an die Endpunkte zu stellen, muss lediglich auf den Send Request über dem Bezeichner für die Methode und der URL geklickt werden. Die Antwort wird durch die Extension
 automatisch in einem neuen Fenster angezeigt.
